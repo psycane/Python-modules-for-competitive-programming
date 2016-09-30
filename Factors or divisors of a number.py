@@ -10,6 +10,5 @@ def factors(n):
     l2.reverse()
     return l1 + l2
 
-s=100
-a=len(factors(10**18))
-print a
+n=128
+print factors(n)

@@ -24,7 +24,6 @@ def sof(n):
             s*=(k**(ct+1)-1)/(k-1)
             k=li[i]
             ct=0
-        
     s*=(k**(ct+1)-1)/(k-1)
     return s
 

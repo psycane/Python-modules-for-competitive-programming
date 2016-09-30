@@ -1,4 +1,3 @@
 from fractions import gcd
-import sys
-li=list(map(int,sys.stdin.readline().split()))
+li=[12,16,48]
 print reduce(gcd,li)

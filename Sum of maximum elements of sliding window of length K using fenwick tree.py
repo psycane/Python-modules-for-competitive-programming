@@ -46,4 +46,4 @@ def sliding_window_totals(lst):
     result.append(constant + linear * j)
   return result
 
-print(sliding_window_totals([10,2,7]))
+print(sliding_window_totals([30,30,72,72]))

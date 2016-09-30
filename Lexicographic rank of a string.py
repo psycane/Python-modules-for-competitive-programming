@@ -22,7 +22,6 @@ def findRank(string):
         updatecount(count,string[i])
     return rank
 
-s=['1','2','3','4','5','6','7','8','9','10']
-string="string"
+s=['1','2','3','4','5','6','7','8','10','9']
 print findRank(s)
     

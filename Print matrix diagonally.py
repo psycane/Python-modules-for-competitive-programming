@@ -5,11 +5,7 @@ def isvalid(i,j,r,c):
         return False
     else:
         return True
-for _ in xrange(int(ip.readline())):
-    n,m=map(int,ip.readline().split())
-    li=[]
-    for i in xrange(n):
-        li.append(map(int,ip.readline().split()))
+def printDiagonally(li,n,m):
     for k in xrange(n):
         i=k-1
         j=1
@@ -36,3 +32,5 @@ for _ in xrange(int(ip.readline())):
         for i in xrange(ct-1,-1,-1):
             print temp[i],
         print li[n-1][k],
+
+printDiagonally([[1,2,3],[4,5,6],[7,8,9]],3,3)

@@ -10,5 +10,5 @@ def lcm(x, y):
 def lcm_of_n(li):
     return reduce(lcm,li)
 
-
-print lcm_of_n(range(1,10000))
+li=[1,2,3,4,5,6,7,8,9,10]
+print lcm_of_n(li)

@@ -8,23 +8,24 @@ def preprocess(li,aux,n,m):
         for j in xrange(1,m):
             aux[i][j]+=aux[i][j-1]
     return aux
-n,m=map(int,raw_input().split())
+
+def calculateSum(li,lj,ri,rj):
+    res=aux[ri][rj]
+    if li>0:
+        res-=aux[li-1][rj]
+    if lj>0:
+        res-=aux[ri][lj-1]
+    if li>0 and lj>0:
+        res+=aux[li-1][lj-1]
+    return res
+
 aux,li=[],[]
-for i in xrange(n):
-    #li.append(list(map(int,raw_input().split())))
-    aux.append([0 for j in xrange(m)])
 li=[[1, 2, 3, 4, 6],
     [5, 3, 8, 1, 2],
     [4, 6, 7, 5, 5],
     [2, 4, 8, 9, 4]]
+n,m=4,5
+aux=[[0 for i in xrange(m)] for i in xrange(n)]
 aux=preprocess(li,aux,n,m)
-li,lj,ri,rj=map(int,raw_input().split())
-res=aux[ri][rj]
-if li>0:
-    res-=aux[li-1][rj]
-if lj>0:
-    res-=aux[ri][lj-1]
-if li>0 and lj>0:
-    res+=aux[li-1][lj-1]
-print res
+print calculateSum(0,0,1,1)
 

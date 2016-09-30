@@ -8,10 +8,10 @@ def extended_gcd(aa, bb):
     return lastremainder, lastx * (-1 if aa < 0 else 1), lasty * (-1 if bb < 0 else 1)
 
 def modinv(a, m):
-	g, x, y = extended_gcd(a, m)
-	if g != 1:
-		raise ValueError
-	return x % m
+    g, x, y = extended_gcd(a, m)
+    if g != 1:
+        raise ValueError
+    return x % m
 
 mod=10**9+7
 print modinv(4,mod)

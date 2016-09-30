@@ -7,5 +7,5 @@ def primes_sieve_best(n):
     return [2]+[i for i in xrange(3,n,2) if sieve[i]]
 
 
-li=primes_sieve_best((10**7)+1)
-print len(li)
+li=primes_sieve_best((10**3)+1)
+print li

@@ -9,16 +9,11 @@ def min_set_ancestor(tree, childrens):
     return result
  
 n = int(raw_input().strip())
- 
 data = raw_input().strip()
- 
 n1 = int(raw_input().strip())
- 
 nodes = raw_input().strip()
- 
 node_data = [int(d.strip()) for d in data.split(' ')]
 childrens = [int(d.strip()) for d in nodes.split(' ')]
- 
  
 tree_data = {i : node_data[i-1] for i in range(1, len(node_data)+1)}
  
@@ -33,7 +28,7 @@ print childrens[0]
            0
          /   \
         1      2
-    /   |  \     \
+     /  |  \     \
     3   4   5     6
     /   / \
     7   8 9
